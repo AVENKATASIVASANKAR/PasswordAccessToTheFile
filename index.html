@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            background-image: url('images/background-image-for\ loginpage.jpg');
+            color:cornflowerblue
+        }
+        #submit{
+            background-color: aqua;
+            border-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form id="form-test">
+        <label>Username</label>
+        <br><br>
+        <input id="username" value="" type="username">
+        <br><br>
+        <label>Password</label>
+        <br><br>
+        <input id="password" value="" type="password">
+        <br><br>
+        <button id="submit" onclick="javascript:validate()" type="submit">Submit</button>
+    </form>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html> 
+
+
+
+
+<!-- <form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form> -->
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("username").value == "sankar"
+       && document.getElementById("password").value == "SANKAR" )
+    {
+        
+       window.open('https://avenkatasivasankar.github.io/TimerToOpenA-Page/')
+        
+    }
+    else
+    {
+        alert( "Wrong Credintials" );
+        
+    }
+}
+</script>
